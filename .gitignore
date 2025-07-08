@@ -88,7 +88,9 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+docs/_build/*
+# 但允许预生成的 HTML 文件用于 ReadTheDocs
+!docs/_build/html/
 
 # PyBuilder
 .pybuilder/
