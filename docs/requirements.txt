@@ -1,7 +1,7 @@
 sphinx==7.1.2
 sphinx-rtd-theme==1.3.0rc1
-# 如果您的文档中有API文档生成，可能需要以下依赖
-# numpy
-# pandas  
-# igraph-python
-# 添加您项目实际使用的其他依赖
+# CIGA的主要依赖
+ciga
+numpy
+pandas
+igraph

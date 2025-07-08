@@ -5,22 +5,8 @@
 
 import os
 import sys
-# 修复路径：添加包含ciga包的父目录
-sys.path.insert(0, os.path.abspath('..'))
-
-import ciga.analysis.graph_centrality_analysis
-import ciga.analysis.graph_community_analysis
-import ciga.analysis.tgraph_centrality_analysis
-import ciga.analysis.tgraph_community_analysis
-import ciga.analysis.graph_properties
-import ciga.analysis.tgraph_properties
-
-import ciga.visualization.graph_plotter
-
-import ciga.utils.data_utils
-import ciga.utils.graph_utils
-
-import ciga.ciga
+# 对于从PyPI安装的包，不需要手动添加路径和导入
+# ReadTheDocs会自动安装包并构建文档
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information

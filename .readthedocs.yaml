@@ -7,18 +7,12 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
-  commands:
-    # 使用预构建的 HTML 文件
-    - mkdir -p $READTHEDOCS_OUTPUT/html
-    - cp -r docs/_build/html/* $READTHEDOCS_OUTPUT/html/
 
-# 跳过 Sphinx 构建
-# sphinx:
-#   configuration: docs/source/conf.py
+# 使用 Sphinx 自动构建
+sphinx:
+  configuration: docs/source/conf.py
 
-# Optionally declare the Python requirements required to build your docs
+# Python依赖配置
 python:
   install:
     - requirements: docs/requirements.txt
-    - method: pip
-      path: .
